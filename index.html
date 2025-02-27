@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis XV Años Diana Lizeth</title>
 
+    <meta property="og:title" content="Mis XV Años Diana Lizeth">
+    <meta property="og:description" content="¡Te invito a celebrar conmigo este día tan especial!">
+    <meta property="og:image" content="https://digievento.github.io/DianaLizeth/sello.png">
+    <meta property="og:url" content="https://digievento.github.io/DianaLizeth/">
+    <meta property="og:type" content="website">
+
     <!-- Animate.css CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,16 +36,7 @@
             width: 100%;
             height: 100%;
             overflow-x: hidden;
-         
-
-
-
-            /*
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            */
+        
         }
         *,
         *::before,
@@ -635,8 +632,6 @@
         audio.loop = true;
 
 
-
-
         var targetDate = new Date("Apr 5, 2025 08:00:00").getTime();
         var countdownTimer = countdown(
             targetDate,
@@ -702,12 +697,6 @@
             
             estrella.style.top = `${Math.random() * (maxY - scrollTop) + scrollTop}px`;
 
-
-
-            //estrella.style.top = `${Math.random() * maxY}px`;
-
-            //estrella.style.top = `${viewportY + Math.random() * viewportHeight}px`;
-
             document.body.appendChild(estrella);
         
             setTimeout(() => {
@@ -724,28 +713,19 @@
 
         
         $(document).ready(function() {
-        
-        
-        
             $(window).scrollTop(0);
-        
-        
         
         });
 
 
-
-
         new WOW().init();
 
-        // Evento de clic en la imagen "sello.png"
         document.getElementById("sello").addEventListener("click", function() {
 
             audio.play();
 
             $(window).scrollTop(0);
 
-            // Añadir animaciones de salida
             document.getElementById("left").classList.add("animate__animated", "animate__slideOutLeft");
             document.getElementById("right").classList.add("animate__animated", "animate__slideOutRight");
 
@@ -762,13 +742,6 @@
 
 
         });
-
-        /*document.addEventListener('contextmenu', function(e) {
-          e.preventDefault();
-        });*/
-
-
-
 
 
 
